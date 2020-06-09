@@ -15,6 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
+  - notepad ./Dockerfile
   - docker build -t simple-node .
   - docker tag simple-node YOUR_DOCKER_HUB/simple-node:latest
 
