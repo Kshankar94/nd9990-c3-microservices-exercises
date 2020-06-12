@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t simple-node .
-  - docker tag simple-node kripashan/simple-node
+  - docker tag simple-node kripashan/simple-node:latest
 
   
   #after_success
